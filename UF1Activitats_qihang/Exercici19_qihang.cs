@@ -1,4 +1,4 @@
-﻿/*
+/*
 * Author: Qihang Li Jiang
 * M03. Programació UF1
 * v1. 30/10/2023
@@ -25,10 +25,10 @@ namespace M03Programacio
             const string msgScholarship = "És becari? ";
             const int PERSON = 3, OFFSET = 1;
 
-            int[] age = new int [PERSON], numPerson = new int[PERSON];
+            int[] age = new int[PERSON], numPerson = new int[PERSON];
             char[] sex = new char[PERSON];
             decimal[] salary = new decimal[PERSON];
-            bool[] scholarship = new bool[PERSON]; 
+            bool[] scholarship = new bool[PERSON];
             string scholarshipAnswer;
 
             for (int i = 0; i < PERSON; i++)
@@ -37,14 +37,18 @@ namespace M03Programacio
 
                 Console.WriteLine(msgAge);
                 age[i] = Convert.ToInt32(Console.ReadLine());
-                     
-                Console.WriteLine(msgSex);
-                sex[i] = Convert.ToChar(Console.ReadLine());
-                                        
+
+                do
+                {
+                    Console.WriteLine(msgSex);
+                    sex[i] = Convert.ToChar(Console.ReadLine());
+                } while ((sex[i] != 'H') && (sex[i] != 'h') && (sex[i] != 'D') && (sex[i] != 'd'));
+                
+
                 Console.WriteLine(msgSalary);
                 salary[i] = Convert.ToDecimal(Console.ReadLine());
-                    
-                   
+
+
                 Console.WriteLine(msgScholarship);
                 scholarshipAnswer = Console.ReadLine();
                 scholarship[i] = (scholarshipAnswer == "Si" || scholarshipAnswer == "SI" || scholarshipAnswer == "si") ? true : false;
