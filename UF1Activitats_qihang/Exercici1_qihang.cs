@@ -5,8 +5,7 @@
  * Exercici 1: Implementa un programa que demani tres nombres enters:
  *      - min i max: valors mínim i màxim
  *      - num
- * El programa haurà de validar si està dins del rang (entre min i max) i
- * en cas contrari, informar a l’usuari, donant per finalitzat el programa.
+ * El programa haurà de validar si està dins del rang (entre min i max) i en cas contrari, informar a l’usuari, donant per finalitzat el programa.
  * 
  */
 
