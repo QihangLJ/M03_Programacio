@@ -1,0 +1,78 @@
+/*
+* Author: Qihang Li Jiang
+* M03. Programació UF1
+* v1. 08/11/2023
+* Exercici 3 (repte): La vida d'un ascensor és dura: sempre amunt i avall portant pes, i mai ningú et dóna les gràcies. Per veure fins a quin punt n'és dura la seva vida, hem instal·lat un sistema que ens informarà cada cop que algú premi un botó de l'ascensor.
+* 
+*/
+
+using System;
+namespace M03Programacio
+{
+    class Activitats
+    {
+        static void Main()
+        {
+            const string msgTopFloor = "Introdueix el pis més alt: ";
+            const string msgBottomFloor = "Introdueix el pis més baix: ";
+            const string msgActualFloor = "Introdueix el pis actual: ";
+            const string msgMoveTo = "Introdueix el pis on vol anar: ";
+            const char msgError = 'E';
+            const int zeroAsciivalue = 48;
+
+            int topFloor, bottomFloor, actualFloor, intUserIntput = 0, numFloorChange = 0, totalFloor = 0, lastFloor = 0;
+            char userIntput = ' ';
+            bool exit = false, errorInvalidFloor = true;
+
+            Console.WriteLine(msgBottomFloor);
+            bottomFloor = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(msgTopFloor);
+            topFloor = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(msgActualFloor);
+            actualFloor = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+
+            while (userIntput != 'X' && userIntput != 'x')
+            {
+                Console.WriteLine(msgMoveTo);
+                userIntput = Convert.ToChar(Console.ReadLine());
+                intUserIntput = (int)userIntput - zeroAsciivalue;
+
+                if (numFloorChange == 0)
+                    lastFloor = intUserIntput;
+
+                if (intUserIntput >= bottomFloor && intUserIntput <= topFloor)
+                {
+                    numFloorChange++;
+                }
+                else
+                {
+                    errorInvalidFloor = true;
+                }
+
+                exit = false;
+                while (!exit && (userIntput != 'X' && userIntput != 'x'))
+                {
+                    if (lastFloor < intUserIntput)
+                    {
+                        totalFloor++;
+                        lastFloor++;
+                    }
+                    else if (lastFloor > intUserIntput)
+                    {
+                        totalFloor++;
+                        lastFloor--;
+                    }
+                    else
+                    {
+                        exit = true;
+                    }
+                }
+                if (intUserIntput >= bottomFloor && intUserIntput <= topFloor)
+                    lastFloor = intUserIntput;
+            }
+            Console.Write($"{numFloorChange} {totalFloor} {lastFloor} ");
+            Console.Write((errorInvalidFloor) ? "E" : " ");
+        }
+    }
+}
