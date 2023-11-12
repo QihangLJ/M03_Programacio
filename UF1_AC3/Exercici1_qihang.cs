@@ -15,11 +15,13 @@ namespace M03Programacio
         {
             const string msgEnterLength = "Introdueix la quantitat de valors que vols que hi hagi en la llista: ";
             const string msgEnterValue = "Introdueix un valor: ";
+            const string msgSumValue = "La suma dels valors de la llista es:";
 
             Console.WriteLine(msgEnterLength);
             int userIntput = Convert.ToInt32(Console.ReadLine());
 
             int[] arrayList = new int[userIntput];
+            int sumVar = 0;
 
             for (int i = 0; i < arrayList.Length; i++)
             {
@@ -28,9 +30,11 @@ namespace M03Programacio
             }
             for (int i = 0; i < arrayList.Length; i++)
             {
-                Console.Write
-                    ($"{arrayList[i]} ");
+                Console.Write($"{arrayList[i]} ");
+                sumVar += arrayList[i];
             }
+            Console.WriteLine();
+            Console.WriteLine($"{msgSumValue} {sumVar}");
         }
     }
 }
