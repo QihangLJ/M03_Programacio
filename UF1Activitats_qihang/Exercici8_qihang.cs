@@ -22,7 +22,7 @@ namespace M03Programacio
             int num;
             bool itsPrime = true;
 
-            Console.WriteLine(msgShowDiagonal);
+            Console.WriteLine(msgEnterNum);
             num = Convert.ToInt32(Console.ReadLine());
 
             if (num <= 1)
@@ -34,14 +34,7 @@ namespace M03Programacio
                     itsPrime = false;
             }
 
-            if (itsPrime)
-            {
-                Console.WriteLine(num + " " + msgItsPrime);
-            }
-            else
-            {
-                Console.WriteLine(num + " " + msgItsNotPrime);
-            }
+            Console.WriteLine(itsPrime ? (num + " " + msgItsPrime) : (num + " " + msgItsNotPrime));
         }
     }
 }
