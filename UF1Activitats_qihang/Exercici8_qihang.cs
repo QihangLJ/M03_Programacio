@@ -15,7 +15,7 @@ namespace M03Programacio
     {
         static void Main()
         {
-            const string msgShowDiagonal = "Introduce un numero entero: ";
+            const string msgEnterNum = "Introduce un numero entero: ";
             const string msgItsPrime = "es un numero Primo.";
             const string msgItsNotPrime = "NO es un numero primo.";
 
