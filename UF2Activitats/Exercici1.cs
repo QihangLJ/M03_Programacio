@@ -9,7 +9,7 @@ using System.Timers;
 
 namespace QihangProgram
 {
-    class QihangCode
+    public class QihangCode
     {
         public static void Main()
         {
