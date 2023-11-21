@@ -1,0 +1,49 @@
+using QihangProgram;
+
+namespace ProjectTest
+{
+    [TestClass]
+    public class ProgramTest
+    {
+        [TestMethod]
+        public void BaseReturn()
+        {
+            //Arrange:
+
+            //Act:
+
+            //Assert:
+        }
+
+
+
+        [TestMethod]
+        public void Power_Base2_Exponent3_Returns8()
+        {
+            // Arrange
+            int baseNumber = 2;
+            int exponent = 3;
+
+            // Act
+            int result = QihangCode.Power(baseNumber, exponent);
+
+            // Assert
+            Assert.AreEqual(8, result);
+        }
+
+        [TestMethod]
+        public void Power_Base3_Exponent4_NotReturns10()
+        {
+            // Arrange
+            int baseNumber = 3;
+            int exponent = 4;
+
+            // Act
+            int result = QihangCode.Power(baseNumber, exponent);
+
+            // Assert
+            Assert.AreNotEqual(10, result);
+        }
+
+    }
+}
