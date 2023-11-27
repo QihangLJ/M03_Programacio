@@ -13,7 +13,7 @@ namespace QihangProgram
     {
         public static void Main()
         {
-            const string msgEnterText = "Introdueix un text: ";
+            const string msgEnterText = "Introdueix un text, tot en "mayus" o tot en "minus", el convertidor pasara a l'altra: ";
 
             string userText;
 
@@ -24,15 +24,7 @@ namespace QihangProgram
         }
         public static string UpperAndLower(string text)
         {
-            if (text == text.ToUpper())
-            {
-                text = text.ToLower();
-            }
-            else
-            {
-                text = text.ToUpper();
-            }
-            return text;
+            return text == text.ToUpper()? text = text.ToLower() : text = text.ToUpper() ;
         }
     }
 }
