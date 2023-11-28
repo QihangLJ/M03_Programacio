@@ -31,6 +31,8 @@
 2. Valors limit:
 - El limit esta en la capacitat de la memoria de la variable que te per guardar el valor.
 - Els nombres amb decimals.
+- El 2147483647 es el valor maxim que pot guardar la nostra variable "int", els valors per sobra d'aquest nombre, peta la maquina. (El programa peta)
+- El -2147483647 es el valor minim que pot guardar la nostra variable "int", els valors per sota d'aquest nombre, peta la maquina. (El programa peta)
 
 3. Classes valides:
 - Base: 0, 1, 2, 3, 50, 100...
