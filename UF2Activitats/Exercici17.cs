@@ -30,11 +30,7 @@ namespace QihangProgram
 
         public static float CelsiusToFahrenheit(float celsius)
         {
-            float fahrenheit = 0;
-
-            fahrenheit = celsius * 9 / 5 + 32;
-
-            return fahrenheit;
+            return celsius * 9 / 5 + 32;
         }
     }
 }
