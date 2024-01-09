@@ -12,21 +12,21 @@ namespace QihangProgram
         static void Main()
         {
             const string AskNum = "Enter a natural number:";
-            const string MsgResult = "La suma dels dígits de {0} és: {1}";
+            const string MsgResult = "The sum of the digits of {0} is: {1}";
 
             Console.WriteLine(AskNum);
             int natural = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(MsgResult, natural, SumaDigits(natural));
+            Console.WriteLine(MsgResult, natural, SumDigits(natural));
         }
-        static int SumaDigits(int num)
+        static int SumDigits(int num)
         {
             if (num < 10)
             {
                 return num;
             }
 
-            return num % 10 + SumaDigits(num / 10);
+            return num % 10 + SumDigits(num / 10);
         }
     }
 }
