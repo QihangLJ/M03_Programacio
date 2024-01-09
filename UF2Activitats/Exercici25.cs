@@ -12,23 +12,23 @@ namespace QihangProgram
         static void Main()
         {
             const string AskNum = "Enter a natural number:";
-            const string MsgResult = "El nombre binari de {0} és: {1}";
+            const string MsgResult = "The binary number of {0} is: {1}";
 
             Console.WriteLine(AskNum);
             int natural = Convert.ToInt32(Console.ReadLine());
-            string binary = NaturalToBinari(natural);
+            string binary = NaturalToBinary(natural);
 
             Console.WriteLine(MsgResult, natural, binary);
         }
 
-        static string NaturalToBinari(int num)
+        static string NaturalToBinary(int num)
         {
             if (num == 0)
             {
                 return "";
             }
             // Afegir el residu de la divisió (0 o 1) a la part binària calculada
-            return NaturalToBinari(num / 2) + (num % 2).ToString();
+            return NaturalToBinary(num / 2) + (num % 2).ToString();
         }
     }
 }
