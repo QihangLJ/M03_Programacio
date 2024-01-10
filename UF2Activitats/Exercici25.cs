@@ -27,7 +27,6 @@ namespace QihangProgram
             {
                 return "";
             }
-            // Afegir el residu de la divisió (0 o 1) a la part binària calculada
             return NaturalToBinary(num / 2) + (num % 2).ToString();
         }
     }
