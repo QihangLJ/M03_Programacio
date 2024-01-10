@@ -23,14 +23,14 @@ namespace QihangProgram
         }
         static bool IsPrimeNumber(int num, int divider = 2)
         {
+            if (divider > num - 1)
+            {
+                return true;
+            }
+
             if (num < 2)
             {
                 return false;
-            }
-
-            if (divider > num / 2)
-            {
-                return true;
             }
 
             if (num % divider == 0)
