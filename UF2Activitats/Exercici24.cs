@@ -12,7 +12,7 @@ namespace QihangProgram
 {
     public class QihangCode
     {
-        static void Main()
+        public static void Main()
         {
             const string AskNum = "Enter a natural number:";
             const string MsgResultIterative = "The result of {0} * {1} = {2}, with the Iterative Russian Multiplication.";
@@ -28,7 +28,7 @@ namespace QihangProgram
             Console.WriteLine(MsgResultIterative, numOne, numTwo, RussianMultiplicationIterative(numOne, numTwo));
             Console.WriteLine(MsgResultRecursive, numOne, numTwo, RussianMultiplicationRecursive(numOne, numTwo));
         }
-        static int RussianMultiplicationIterative(int firstValue, int secondValue)
+        public static int RussianMultiplicationIterative(int firstValue, int secondValue)
         {
             int result = 0;
 
@@ -44,7 +44,7 @@ namespace QihangProgram
             return result;
         }
 
-        static int RussianMultiplicationRecursive(int firstValue, int secondValue)
+        public static int RussianMultiplicationRecursive(int firstValue, int secondValue)
         {
             if (firstValue == 0)
             {
