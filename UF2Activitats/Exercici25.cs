@@ -27,7 +27,7 @@ namespace QihangProgram
             {
                 return "";
             }
-            return NaturalToBinary(num / 2) + (num % 2).ToString();
+            return NaturalToBinary(num / 2) + (num % 2);
         }
     }
 }
