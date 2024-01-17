@@ -2,7 +2,7 @@
  * Author: Qihang Li Jiang
  * M03. Programació UF2
  * v1. 17/01/2024
- * Exercici 30. Implementa un mètode que, donat un text introduït per teclat, compti de manera recursiva quantes vegades es troba en el text la lletra també introduïda per teclat. El text SEMPRE ha de finalitzar amb ‘.’
+ * Exercici 30. Implementa un mètode que determini si un nombre natural és perfecte. Un nombre és perfecte si és igual a la suma dels seus divisors tret d’ell mateix (p.ex. n=6 és perfecte perquè n=1+2+3).
  */
 
 using System.Reflection.PortableExecutable;
