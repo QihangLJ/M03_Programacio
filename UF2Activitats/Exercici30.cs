@@ -2,8 +2,10 @@
  * Author: Qihang Li Jiang
  * M03. Programació UF2
  * v1. 17/01/2024
- * Exercici 30. Implementa un mètode que determini si un nombre natural és perfecte. Un nombre és perfecte si és igual a la suma dels seus divisors tret d’ell mateix (p.ex. n=6 és perfecte perquè n=1+2+3).
+ * Exercici 30. Implementa un mètode que, donat un text introduït per teclat, compti de manera recursiva quantes vegades es troba en el text la lletra també introduïda per teclat. El text SEMPRE ha de finalitzar amb ‘.’
  */
+
+using System.Reflection.PortableExecutable;
 
 namespace QihangProgram
 {
@@ -17,7 +19,7 @@ namespace QihangProgram
             Console.WriteLine(AskNum);
             int natural = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(MsgResult, PerfectNumbers(natural) == natural);
+            Console.WriteLine(MsgResult, CheckPerfectNumber(natural));
         }
 
         public static int PerfectNumbers(int num, int divisor = 1) 
@@ -33,6 +35,11 @@ namespace QihangProgram
             }
 
             return PerfectNumbers(num, divisor + 1);
+        }
+
+        public static bool CheckPerfectNumber (int num)
+        {
+            return PerfectNumbers(num) == num;
         }
     }
 }
