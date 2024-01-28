@@ -22,7 +22,7 @@ namespace Program
             
             Console.WriteLine(MsgLines, LinesCounter(fileName));
         }
-        static int LinesCounter(string file)
+        public static int LinesCounter(string file)
         {
             int count = 0;
 
