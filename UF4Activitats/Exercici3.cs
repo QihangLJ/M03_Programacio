@@ -1,7 +1,7 @@
 /* Qihang Li Jiang
  * M03_UF4 Programacio
  * 29/01/2024
- * Exercici 2. Implementa una classe que defineixi l’objecte Bike, així com la controladora que permeti instanciar diversos tipus de bicicletes.
+ * Exercici 3. Implementa una classe que defineixi l’objecte Bike, així com la controladora que permeti instanciar diversos tipus de bicicletes.
  */
 
 namespace MyNamespace
