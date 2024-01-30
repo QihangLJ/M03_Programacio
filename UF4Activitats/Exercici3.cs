@@ -20,9 +20,7 @@ namespace MyNamespace
         public Bike(string brand, string color) 
         {
             SetBrand(brand);
-            Console.Write(GetBrand() + " ");
             SetColor(color);
-            Console.WriteLine(GetColor());
         }
 
     }
@@ -32,12 +30,10 @@ namespace MyNamespace
         public static void Main() 
         { 
             Bike firstBike = new Bike("merida", "rojo");
-            Console.WriteLine();
-            Bike secondBike = new Bike("specialzed", "negro");
-            Console.WriteLine();
+            Console.WriteLine(firstBike.GetBrand() + " " + firstBike.GetColor());
 
-            Bike thirstBike = new Bike("canyon", "blanco");
-
+            Bike secondBike = new Bike("specialized", "negro");
+            Console.WriteLine(secondBike.GetBrand() + " " + secondBike.GetColor());
         }
     }
 }
