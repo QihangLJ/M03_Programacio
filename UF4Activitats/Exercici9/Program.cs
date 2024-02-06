@@ -1,7 +1,7 @@
 ﻿/* Qihang Li Jiang
  * M03_UF4 Programacio
  * 06/02/2024
- * Exercici 8. Modifica les classes dels exercicis anteriors (6 i 7) de manera que les classes puguin “heretar” de diverses superclasses.
+ * Exercici 9. Implementa un programa que permeti introduir i mostrar les següents dades dels objectes llibre, revista, diari:
  */
 
 using MyObject;
