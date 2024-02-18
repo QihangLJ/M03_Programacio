@@ -1,13 +1,7 @@
 ﻿/* Qihang Li Jiang
  * M03_UF4 Programacio
  * 17/02/2024
- * Exercici 13.Implementa l’encadenament de constructors de la classe següent:
-    public class Furniture {
-    private float weight;
-    private double price;
-    private boolean set;
-    private String name, material, colour;
-    }
+ * Exercici 14.Posa un exemple de polimorfisme en temps d’execució, utilitzant la classe Furniture (exercici 12).
  */
 
 using MyObject;
