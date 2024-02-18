@@ -12,10 +12,10 @@ namespace MyProgram
     {
         public static void Main()
         {
-            Table table = new Table(10.0f, 100.0, true, "Table", "Wood", "Brown");
+            Table table = new Table(10.0f, 100.0, true, "Taula", "Fusta", "Marro");
             table.GetInfo();
 
-            Furniture furniture = new Furniture(20.0f, 150.0, true, "Bed", "Wood", "Red");
+            Furniture furniture = new Furniture(3.5f, 20.0, true, "Cadira", "Plastic", "Vermell");
             furniture.GetInfo();
         }
     }
