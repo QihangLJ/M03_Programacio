@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* Qihang Li Jiang
+* M03_UF4 Programacio
+* 19/02/2024
+* Exercici 16. Payment Card
+*/
+
+using System;
 using exercise16;
 
 namespace Program
