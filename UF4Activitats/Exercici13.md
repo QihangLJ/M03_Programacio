@@ -10,3 +10,8 @@
 Dona error perquè dintre de la clase "Cat", en el constructor demana dos arguments (weight i name),
 i a l'hora d'instanciar l'objecte "Cat", no s'ha introduït cap argument, per tant, dona l'error. Tampoc hi ha cap
 encadenament de constructor.
+
+PERO
+
+C# per defecte, si no hi ha cap constructor, crea un constructor per defecte, sense cap parametre, pero una vegada
+que s'hagi creat un constructor amb parametres, el constructor per defecte ja no es crea i s¡hauria de tornar a crear.
