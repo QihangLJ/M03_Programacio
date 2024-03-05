@@ -1,4 +1,14 @@
-﻿using System;
+/* Qihang Li Jiang
+* M03_UF5 Programacio
+* 05/03/2024
+* Exercici 1. Implementa la classe “Book” amb el següents atributs:
+*        id: int
+*        title: string
+*        numpages: int
+* Cal que la classe disposi dels mètodes d’accés i modificació de dades, així com  l’encadenament de constructors (major càrrega lògica i default) i sobreescrigui el mètode ToString(). Un cop implementada, genera en la controladora una col·lecció de 5 instàncies i ordena el resultat per nombre de pàgines (ascendent i descendent).
+*/
+
+using System;
 using System.Collections.Generic;
 
 namespace MyProgram
