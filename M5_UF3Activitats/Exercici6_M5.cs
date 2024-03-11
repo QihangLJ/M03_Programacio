@@ -18,13 +18,13 @@ namespace Program
             compteEstalvi.MostarDades();
             compteDiposit.MostarDades();
 
-            Console.WriteLine(CompteCorrent.Depositar(200));
-            Console.WriteLine(CompteEstalvi.Depositar(200));
-            Console.WriteLine(CompteDiposit.Depositar(200));
+            Console.WriteLine(compteCorrent.Depositar(200));
+            Console.WriteLine(compteEstalvi.Depositar(200));
+            Console.WriteLine(compteDiposit.Depositar(200));
 
-            Console.WriteLine(CompteCorrent.Extreure(10.5f));
-            Console.WriteLine(CompteEstalvi.Extreure(20.5f));
-            Console.WriteLine(CompteDiposit.Extreure(60.5f));
+            Console.WriteLine(compteCorrent.Extreure(10.5f));
+            Console.WriteLine(compteEstalvi.Extreure(20.5f));
+            Console.WriteLine(compteDiposit.Extreure(60.5f));
 
             Console.WriteLine(compteCorrent.PucExtreure(100)? MsgCanExtract : MsgCantExtract);
             Console.WriteLine(MsgInteres + compteEstalvi.CalcularInteres(100));
