@@ -58,7 +58,7 @@ namespace MyProgram
         //INTENTAT
         public static bool MethodD(string text)
         {
-            string pattern = "";
+            string pattern = "([a-z]{1}+(_[a-z])+)+";
             Regex regex = new Regex(pattern);
 
             return regex.IsMatch(text);
