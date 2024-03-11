@@ -21,7 +21,7 @@ namespace MyProgram
             Console.WriteLine(MethodA("abc"));
             Console.WriteLine(MethodA("---"));
 
-            Console.WriteLine(MethodB("aii"));
+            Console.WriteLine(MethodB("tii"));
             Console.WriteLine(MethodB("abb"));
 
             Console.WriteLine(MethodC("abb"));
@@ -39,10 +39,9 @@ namespace MyProgram
             return regex.IsMatch(text);
         }
 
-        //INTENTAT
         public static bool MethodB(string text)
         {
-            string pattern = "";
+            string pattern = "a|ab*";
             Regex regex = new Regex(pattern);
 
             return regex.IsMatch(text);
