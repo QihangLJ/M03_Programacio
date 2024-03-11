@@ -2,10 +2,10 @@
 * M03_UF5 Programacio
 * 11/03/2024
 * Exercici 14. Implementa un mètode (diferent per a cada opció) que:
-*    - comprovi que una cadena conté només un conjunt determinat de caràcters (en aquest cas a-z, A-Z i 0-9).
-*    - comprovi si una cadena conté una a seguida de zero o més b's.
-*    - comprovi si una cadena conté una a seguida de dos o tres b's.
-*    - trobi seqüències de lletres minúscules unides amb un guió baix
+*    - A) Comprovi que una cadena conté només un conjunt determinat de caràcters (en aquest cas a-z, A-Z i 0-9).
+*    - B) Comprovi si una cadena conté una a seguida de zero o més b's.
+*    - C) Comprovi si una cadena conté una a seguida de dos o tres b's.
+*    - D) Trobi seqüències de lletres minúscules unides amb un guió baix
 */
 
 using System;
