@@ -10,7 +10,7 @@ namespace MyProgram
 {
     public class MyCode
     {
-        public delegate List<int> MyDelegate(List<int> intList);
+        public delegate List<int> SortDelegate(List<int> intList);
 
         public static void Main()
         {
@@ -25,7 +25,7 @@ namespace MyProgram
 
             Console.WriteLine();
 
-            MyDelegate myAction = delegate (List<int> list)
+            SortDelegate myAction = delegate (List<int> list)
             {
                 list.Sort();
                 return list;
