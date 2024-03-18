@@ -8,24 +8,31 @@ namespace MyProgram
 {
     public class MyCode
     {
-        public delegate bool MathDelegate(int num);
+        public delegate string NaturalNumberDelegate(int num);
 
         public static void Main()
         {
             const string AskNum = "Introdueix un número enter: ";
-            const string MsgNatural = "El número introduït és natural.";
-            const string MsgNotNatural = "El número introduït no és natural.";
+            const string Error = "El valor introduït no és un número enter.";
 
-            MathDelegate isNatural = num =>
+            NaturalNumberDelegate CheckNatural = num =>
             {
-                return num > 0;
+                const string MsgNatural = "El número introduït és natural.";
+                const string MsgNotNatural = "El número introduït no és natural.";
+
+                return num > 0 ? MsgNatural : MsgNotNatural;
             };
 
             Console.WriteLine(AskNum);
-            int num = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(isNatural(num) ? MsgNatural : MsgNotNatural);
-
+            try {                 
+                int num = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(CheckNatural(num));
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine(Error);
+            }
         }
     }
 }
