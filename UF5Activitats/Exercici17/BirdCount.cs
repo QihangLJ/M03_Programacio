@@ -19,14 +19,14 @@
         // 2. Check how many birds visited today
         public int Today()
         {
-            const int Today = 5;
+            const int Today = 6;
             return BirdsPerDay[Today];
         }
 
         // 3. Increment today's count
         public void IncrementTodaysCount()
         {
-            const int Today = 5;
+            const int Today = 6;
             BirdsPerDay[Today]++;
         }
 
