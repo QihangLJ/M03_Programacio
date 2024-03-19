@@ -12,7 +12,6 @@ namespace MyPrograma
         {
             int[] numbers = [14, 22, 33, 24, 5, 16, 7, 21, 19, 13];
 
-            //devuelve los números mayores de 20 y sus cuadrados
             var queryLinq = from number in numbers
                             where number > 20
                             select new { number, square = number * number };
