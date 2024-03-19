@@ -18,7 +18,7 @@ namespace MyPrograma
 
             foreach (var number in queryLinq)
             {
-                Console.Write(number + " ");
+                Console.WriteLine(number);
             }
         }
     }
